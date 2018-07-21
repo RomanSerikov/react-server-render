@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import Catalog from './Catalog';
-import { Products } from './constants/products';
+import { products } from './constants/products';
 
 class CatalogPage extends Component {
+  constructor() {
+    super();
+    this.state = { products: products }
+  }
+  
   render() {
-    return (
-      <Catalog products={ Products } />
-    );
+    return <Catalog products={this.state.products} />;
   }
 }
 

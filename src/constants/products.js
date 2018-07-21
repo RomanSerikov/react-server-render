@@ -1,4 +1,4 @@
-export const Products = [
+export const products = [
   {
     id: 1,
     title: 'The first product',
@@ -18,3 +18,4 @@ export const Products = [
     imageUrl: 'https://placeimg.com/300/200/tech'
   }
 ]
+
